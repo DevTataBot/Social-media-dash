@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color:#ffffff;
+}
+.container{
+    padding: 30px 100px;
+}
+.encabezado{
+    background-color: #f8f9fe;
+    height: 200px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display:flex;
+    justify-content: space-between;
+}
+.encabezado__tittle h1{
+    font-size: 28px;
+    color: #202028;
+}
+.encabezado__tittle span{
+    font-weight: bold;
+    color: #8c8f98;
+}
+.encabezado__mode{
+    height: 35px;
+    margin-right: 42px;
+    display: inline-block;
+} 
+.encabezado__mode span{
+    font-weight: bold;
+    color: #8c8f98;
+    margin-right: 5px;
+}
+.encabezado__mode input{
+    position: absolute;
+    z-index: 10;
+    opacity: 0; 
+    width: 40px;
+    height: 20px;
+}
+.encabezado__mode .slider{
+    position: absolute;
+    cursor: pointer;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    transition: .4s;
+    right: 100px;
+    border-radius: 30px;
+    -webkit-transition: .4s;
+}
+.encabezado__mode .light{
+    display: none;
+} 
+.encabezado__mode .slider::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    top: 1.7px;
+    right:2.5px;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider{
+    background:linear-gradient(to right, #378fe6, #3eda82);
+    background: -webkit-linear-gradient(to right, #378fe6, #3eda82);
+}
+input:checked + .slider::before{
+    -webkit-transform: translateX(-18px);
+    -ms-transform: translateX(-18px);
+    transform: translateX(-18px);
+}
+.followers{
+    margin-top: -150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:20px;
+    /* display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; */
+}
+.followers__redes{
+    background-color: #f0f3fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 20px 30px;
+    height: 170px;
+    margin-bottom: 30px;
+}
+.followers__redes:hover{
+    background-color:#dae0ec;
+}
+.fb{
+    border-top:4px solid #198ff5;
+}
+.tw{
+    border-top: 4px solid  #198ff5;
+}
+.ig{
+    height: 174px;
+}
+.ig::before{
+    background: linear-gradient(to right, #fdc468, #df4996);
+    content: "";
+    margin-top: -20px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: calc(100% + 60px);
+    height: 4px;
+}
+.yt{
+    border-top: 4px solid #c4032a;
+}
+.followers__redes-nickname{
+   display: flex;
+   align-self: center;
+   margin-top: 0;
+}
+.followers__redes-nickname .nickname{
+    font-weight: bold;
+    font-size: 15px;
+    color: #6e7077;
+    margin-left:8px;
+}
+.followers__redes .num{
+    font-size: 50px;
+    font-weight: bold;
+    color: #220028;
+}
+.followers__redes .follow-num{
+    letter-spacing: 6px;
+    margin-top: -15px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    color: rgb(105, 105, 105);
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.followers__redes .num-hoy{
+    display: flex;
+    align-items: center;
+}
+.followers__redes .num-hoy img{
+    height: 8px;
+    width: 8px;
+}
+
+.overview{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.overview h2{
+    font-size: 25px;
+    color: #858585;
+    grid-column: span 4;
+}
+.overview .actividad{
+    background-color: #f0f3fa;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 25px;
+    row-gap: 10px;
+}
+.overview .actividad:hover{
+    background-color:#dae0ec;
+}
+.overview .actividad .view{
+    justify-self: flex-start;
+}
+.overview .actividad img, .overview .actividad .porcentaje{
+    justify-self: flex-end;
+}
+.overview .actividad .view{
+    font-weight: bold;
+    font-size: 15px;
+    color: #6e7077;
+}
+.overview .actividad .view-num{
+    font-weight: bold;
+    color: #000;
+    font-size: 28px;
+    align-self: flex-end;
+}
+.overview .actividad .porcentaje{
+    align-self: flex-end;
+}
+.overview .actividad .porcentaje img{
+    height: 8px;
+    width: 8px;
+}
+.up{
+    color: #4fc088;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.down{
+    color: #d42e2e;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}

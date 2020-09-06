@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="css/estilos.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -21,56 +21,59 @@
       <span>Total Followers: 23,004</span>
     </div>
     <div class="encabezado__mode">
-      <span class="light">Dark Mode</span>
-      <span class="dark">Light Mode</span>
+      <span class="dark">Dark Mode</span>
+      <span class="light">Light Mode</span>
       <input type="checkbox" name="checkbox" id="checkbox">
+      <span class="slider"></span>
     </div>
   </header>
-  <section class="followers">
-    <div class="followers__redes">
-      <span class="user">@nathanf</span>
-      <span class="num">1987</span>
-      <span>Followers</span>
-      <span class="num_hoy">12 Today</span>
-    </div>
+  <section class="followers container">
     <div class="followers__redes fb">
-      <img src="images/icon-facebook.svg" alt="">
-      <span class="user">@nathanf</span>
+      <div class="followers__redes-nickname">
+        <img src="images/icon-facebook.svg" alt="">
+        <span class="nickname">@nathanf</span>
+      </div>
       <span class="num">1987</span>
-      <span>Followers</span>
+      <span class="follow-num">Followers</span>
       <div class="num-hoy"> 
         <img src="images/icon-up.svg" alt="">
-        <span>12 Today</span>
+        <span class="up">12 Today</span>
       </div>
     </div>
     <div class="followers__redes tw">
-      <img src="images/icon-twitter.svg" alt="">
-      <span class="user">@nathanf</span>
+      <div class="followers__redes-nickname">
+        <img src="images/icon-twitter.svg" alt="">
+        <span class="nickname">@nathanf</span>
+      </div>
       <span class="num">1044</span>
-      <span>Followers</span>
+      <span class="follow-num">Followers</span>
       <div class="num-hoy"> 
         <img src="images/icon-up.svg" alt="">
-        <span>99 Today</span>
+        <span class="up">99 Today</span>
       </div>
     </div>
     <div class="followers__redes ig">
-      <img src="images/icon-instagram.svg" alt="">
-      <span class="user">@nathanf</span>
+      <div class="followers__redes-nickname">
+        <img src="images/icon-instagram.svg" alt="">
+        <span class="nickname">@nathanf</span>
+      </div>
       <span class="num">11k</span>
-      <span>Followers</span>
+      <span class="follow-num">Followers</span>
       <div class="num-hoy"> 
         <img src="images/icon-up.svg" alt="">
-        <span>11k Today</span>
+        <span class="up">11k Today</span>
       </div>
     </div>
     <div class="followers__redes yt">
-      <img src="images/icon-youtube.svg" alt="">
-      <span class="user">@nathanf</span>
+      <div class="followers__redes-nickname">
+        <img src="images/icon-youtube.svg" alt="">
+        <span class="nickname">@nathanf</span>
+      </div>   
       <span class="num">1987</span>
-      <span>Followers</span>
+      <span class="follow-num">Followers</span>
       <div class="num-hoy"> 
         <img src="images/icon-down.svg" alt="">
-        <span>144 Today</span>
+        <span class="down">144 Today</span>
       </div>
     </div>
   </section>
@@ -82,7 +85,7 @@
       <span class="view-num">87</span>
       <div  class="porcentaje">
         <img src="images/icon-up.svg" alt="">
-        <span>3%</span>
+        <span class="up">3%</span>
       </div>
     </div>
     <div class="actividad">
@@ -91,7 +94,7 @@
       <span class="view-num">52</span>
       <div class="porcentaje">
         <img src="images/icon-down.svg" alt="">
-        <span>2%</span>
+        <span class="down">2%</span>
       </div>
     </div>
     <div class="actividad">
@@ -100,7 +103,7 @@
       <span class="view-num">5462</span>
       <div class="porcentaje">
         <img src="images/icon-up.svg" alt="">
-        <span>2257%</span>
+        <span class="up">2257%</span>
       </div>
     </div>
     <div class="actividad">
@@ -109,7 +112,7 @@
       <span class="view-num">52k</span>
       <div class="porcentaje">
         <img src="images/icon-up.svg" alt="">
-        <span>1375%</span>
+        <span class="up">1375%</span>
       </div>
     </div>
     <div class="actividad">
@@ -118,7 +121,7 @@
       <span class="view-num">117</span>
       <div class="porcentaje">
         <img src="images/icon-up.svg" alt="">
-        <span>303%</span>
+        <span class="up">303%</span>
       </div>
     </div>
     <div class="actividad">
@@ -127,7 +130,7 @@
       <span class="view-num">507</span>
       <div class="porcentaje">
         <img src="images/icon-up.svg" alt="">
-        <span>553%</span>
+        <span class="up">553%</span>
       </div>
     </div>
     <div class="actividad">
@@ -136,7 +139,7 @@
       <span class="view-num">107</span>
       <div class="porcentaje">
         <img src="images/icon-down.svg" alt="">
-        <span>553%</span>
+        <span class="down">553%</span>
       </div>
     </div>
     <div class="actividad">
@@ -145,7 +148,7 @@
       <span class="view-num">1407</span>
       <div class="porcentaje">
         <img src="images/icon-down.svg" alt="">
-        <span>12%</span>
+        <span class="down">12%</span>
       </div>
     </div>
   </section>  
