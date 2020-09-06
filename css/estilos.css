@@ -25,6 +25,9 @@ body{
     font-weight: bold;
     color: #8c8f98;
 }
+hr{
+    visibility: hidden;
+}
 .encabezado__mode{
     height: 35px;
     margin-right: 42px;
@@ -82,9 +85,6 @@ input:checked + .slider::before{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap:20px;
-    /* display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; */
 }
 .followers__redes{
     background-color: #f0f3fa;
@@ -212,3 +212,68 @@ input:checked + .slider::before{
     font-weight: bold;
     font-size: 12px;
 }
+@media only screen and (max-width:1030px) and (min-width:750px){
+    .followers{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .followers__redes{
+        width: 35%;
+    }
+    .overview{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .overview h2{
+        width: 100%;
+    }
+    .overview .actividad{
+        width: 37%;
+    }
+    
+}
+@media only screen and (max-width:749px) and (min-width:300px){
+    .encabezado{
+        display: block;
+    }
+    .encabezado__tittle h1{
+        font-size: 18px;
+    }
+    .encabezado__tittle span{
+        font-size: 14px;
+    }
+    hr{
+        margin: 10px 0;
+        visibility: visible;
+    }
+    .encabezado__mode .slider{
+        right: 50px;
+    }
+    .container{
+        padding: 30px 50px ;
+    }
+    .followers{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .followers__redes{
+        width: 100%;
+    }
+    .overview{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .overview h2{
+        width: 100%;
+    }
+    .overview .actividad{
+        width: 100%;
+        padding: 35px;
+    }
+  
+} 
