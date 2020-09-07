@@ -62,7 +62,7 @@ hr{
     margin-right: 42px;
     display: inline-block;
 } 
-.encabezado__mode span{
+.encabezado__mode label{
     font-weight: bold;
     color: var(--subtitulo-color);
     margin-right: 5px;
@@ -85,9 +85,12 @@ hr{
     border-radius: 30px;
     -webkit-transition: .4s;
 }
-.encabezado__mode .light{
+.statusOFF{
     display: none;
-} 
+}
+.statusON{
+    visibility:visible;
+}
 .encabezado__mode .slider::before{
     position: absolute;
     content: "";
