@@ -245,7 +245,7 @@ input:checked + .slider::before{
     color:var(--color-num);
 }
 .attribution a{
-    color: --;
+    color: var(--color-link);
 }
 @media only screen and (max-width:1030px) and (min-width:750px){
     input:checked + .slider{
