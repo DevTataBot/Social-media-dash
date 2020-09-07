@@ -54,6 +54,7 @@ body{
     font-weight: bold;
     color: var(--subtitulo-color);
 }
+
 hr{
     visibility: hidden;
 }
@@ -117,6 +118,9 @@ input:checked + .slider::before{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap:20px;
+}
+.oculto{
+    display: none;
 }
 .followers__redes{
     background-color: var(--color-tarjetas);
