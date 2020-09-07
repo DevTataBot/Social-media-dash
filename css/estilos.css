@@ -3,7 +3,7 @@
     padding: 0;
     font-family: 'Inter', sans-serif;
 }
-html[theme=light-theme]{
+html[data-theme=light-theme]{
     --backcolor:#fff;
     --encabezado-color: #f8f9fe;
     --titulo-color:#202028;
@@ -18,7 +18,7 @@ html[theme=light-theme]{
     --color-link:#6440e4;
 
 }
-html[theme=dark-theme]{
+html[data-theme=dark-theme]{
     --backcolor:#1d2029;
     --encabezado-color: #20222f;
     --titulo-color:#fff;
